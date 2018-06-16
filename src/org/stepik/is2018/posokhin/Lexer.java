@@ -44,6 +44,7 @@ public class Lexer {
 
     private class SimpleSymbolExtractor implements LexemeExtractor {
         private static final char ADD_SYMBOL = '+';
+        private static final char MULTIPLY_SYMBOL = '*';
         private static final char SUBSTRACT_SYMBOL = '-';
         private static final char POWER_SYMBOL = '^';
         private static final char LEFT_BRACKET = '(';
@@ -55,6 +56,7 @@ public class Lexer {
             symbols = new HashMap<>();
 
             symbols.put(ADD_SYMBOL, PLUS);
+            symbols.put(MULTIPLY_SYMBOL, MULTIPLY);
             symbols.put(SUBSTRACT_SYMBOL, MINUS);
             symbols.put(POWER_SYMBOL, DEGREE);
             symbols.put(LEFT_BRACKET, OPENING_BRACKET);
