@@ -5,23 +5,17 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter expression:");
+        String expression = sc.next();
 
-        StringBuilder expression = new StringBuilder();
-        while (sc.hasNext()) {
-            expression.append(sc.next());
-        }
-
-        Lexer lexer = new Lexer(expression.toString());
+        Lexer lexer = new Lexer(expression);
         Parser parser = new Parser(lexer);
 
         String result;
         try {
             result = parser.calculate();
-        } catch (TooBigDegreeException tbde) {
-            System.out.print("ERROR: TOO BIG");
-            return;
         } catch (Exception e) {
-            System.out.print("ERROR: INVALID");
+            System.err.print(e.getMessage() + " Finishing.");
             return;
         }
 
