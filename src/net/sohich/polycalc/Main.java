@@ -1,4 +1,4 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc;
 
 import java.util.Scanner;
 

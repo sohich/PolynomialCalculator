@@ -1,9 +1,9 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc.representation;
 
 import java.util.Arrays;
 
 public class Term implements Comparable<Term> {
-    static final int VARIABLES_COUNT = 26;
+    public static final int VARIABLES_COUNT = 26;
     private static final int MAX_DEGREE = 32;
     private final int ratio;
     private final int[] degrees;

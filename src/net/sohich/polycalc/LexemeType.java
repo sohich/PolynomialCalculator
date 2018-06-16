@@ -1,6 +1,6 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc;
 
-public enum LexemeType {
+enum LexemeType {
     OPENING_BRACKET,
     CLOSING_BRACKET,
     MULTIPLY,

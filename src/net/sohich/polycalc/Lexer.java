@@ -1,12 +1,12 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc;
 
 import java.util.HashMap;
 import java.util.HashSet;
 
-import static org.stepik.is2018.posokhin.LexemeType.*;
+import static net.sohich.polycalc.LexemeType.*;
 
 
-public class Lexer {
+class Lexer {
     private final LexemeReader reader;
     private final HashSet<LexemeExtractor> extractors;
 

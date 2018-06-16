@@ -1,8 +1,11 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc;
+
+import net.sohich.polycalc.representation.Polynomial;
+import net.sohich.polycalc.representation.Term;
 
 import java.util.ArrayList;
 
-import static org.stepik.is2018.posokhin.LexemeType.*;
+import static net.sohich.polycalc.LexemeType.*;
 
 class Parser {
     private final Lexer lexer;

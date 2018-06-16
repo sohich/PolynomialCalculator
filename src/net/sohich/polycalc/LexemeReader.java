@@ -1,4 +1,4 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc;
 
 import java.util.NoSuchElementException;
 
@@ -21,8 +21,7 @@ class LexemeReader {
             throw new NoSuchElementException("Expression string has no more symbols.");
         }
 
-        char symbol = expression.charAt(currentPosition);
-        return symbol;
+        return  expression.charAt(currentPosition);
     }
 
     boolean hasMore() {

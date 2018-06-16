@@ -1,4 +1,6 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc.representation;
+
+import net.sohich.polycalc.InvalidSyntaxException;
 
 import java.util.ArrayList;
 import java.util.Collections;

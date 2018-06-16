@@ -1,4 +1,4 @@
-package org.stepik.is2018.posokhin;
+package net.sohich.polycalc;
 
 class Lexeme {
     private final LexemeType type;
